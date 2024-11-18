@@ -1,0 +1,326 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: no-repeat url(images/bg-header-desktop.png);
+    background-size: 100% 24%;
+    background-position: top;
+    margin-top: 100px;
+}
+
+/* All */
+.title {
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+}
+
+.info {
+    color: hsl(201, 11%, 66%);
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+/* header-styles */
+header {
+    text-align: center;
+    display: grid;
+    place-self: center;
+    place-items: center;
+    gap: 0.8rem;
+    grid-template-columns: minmax(100px, 600px);
+}
+
+#header-title {
+    margin-top: 2.4rem;
+    font-size: 2.4rem !important;
+}
+
+.header-btn {
+    padding: 0.8rem 2rem 0.6rem 2rem;
+    border-radius: 20px;
+    margin: 1.8rem 0.3rem 0 0.3rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#ios-btn {
+    background-color: hsl(171, 66%, 44%);
+    border-bottom: 3px solid hsla(171, 69%, 33%, 0.400);
+    box-shadow: 0.1em 0.1em 0.5em hsl(171, 66%, 44%);
+}
+
+#mac-btn {
+    background-color: hsl(233, 100%, 69%);
+    border-bottom: 3px solid hsla(233, 74%, 45%, 0.400);
+    box-shadow: 0.1em 0.1em 0.5em hsl(233, 100%, 69%);
+}
+
+/* main-styles  */
+/* first section */
+#computer {
+    text-align: center;
+    margin-top: 180px;
+}
+
+#computer-main-container {
+    display: grid;
+    place-self: center;
+    grid-template-columns: minmax(100px, 630px);
+    gap: 1.2rem;
+
+}
+
+#computer-title {
+    font-size: 1.8rem;
+}
+
+#computer-content-container {
+    margin-top: 70px;
+    display: flex;
+    gap: 8rem;
+}
+
+#computer-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.com-stats-info {
+    text-align: start;
+    display: grid;
+    grid-template-columns: minmax(100px, 340px);
+}
+
+h3 {
+    font-size: 1.4rem;
+
+}
+
+h3+p {
+    margin-top: 0.8rem;
+    text-align: start !important;
+}
+
+/*second section */
+
+#devices {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    text-align: center;
+}
+
+#devices-content-container {
+    display: grid;
+    grid-template-columns: minmax(100px, 630px);
+    place-items: center;
+    place-self: center;
+    gap: 1.2rem;
+}
+
+#devices-title {
+    font-size: 1.8rem;
+}
+
+/* third section */
+
+#workflow {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#workflow-title {
+    font-size: 1.8rem;
+}
+
+#workflow-content-container {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.workflow-content {
+    display: grid;
+    grid-template-columns: minmax(100px, 400px);
+    place-items: center;
+}
+
+.workflow-content h4 {
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+#icons {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* fourth section */
+
+#download {
+    margin-top: 140px;
+    text-align: center;
+    display: grid;
+    place-self: center;
+    place-items: center;
+    gap: 0.8rem;
+    grid-template-columns: minmax(100px, 600px);
+}
+
+#download-title {
+    font-size: 1.8rem;
+}
+
+/* footer */
+
+footer {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: hsla(202, 11%, 66%, 0.162);
+    align-items: center;
+    min-height: 15vh;
+
+}
+
+#footer-img {
+    width: 50px;
+    height: 50px;
+}
+
+
+#text-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 0.7rem;
+    position: relative;
+    left: -100px;
+}
+
+
+#media {
+    display: flex;
+    gap: 1rem;
+}
+
+#media i:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+#text-box p:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 80%;
+
+
+}
+
+/* tablet/mobile */
+@media (max-width:1150px) {
+    html {
+        font-size: 14px;
+    }
+
+    #header-info {
+        margin: 1rem;
+    }
+
+    .header-btn {
+        display: flex;
+        margin-top: 1.3rem;
+        font-size: 1.2rem;
+        padding: 1rem 6rem;
+    }
+
+    #computer-content-container {
+        flex-direction: column;
+        margin-top: 4rem;
+        gap: 3rem;
+    }
+
+    #computer-stats {
+        place-items: center;
+    }
+
+    .com-stats-info {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    #devices {
+        align-items: normal;
+    }
+
+    #workflow-content-container {
+        flex-direction: column;
+        gap: 3rem;
+        place-items: center;
+    }
+
+    .workflow-content h4 {
+        margin-top: 2rem;
+    }
+
+    #icons {
+        margin-top: 8rem;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    #text-box {
+        position: inherit;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    #footer-img {
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    #text-box {
+        grid-template-columns: 1fr;
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    #media {
+        margin-bottom: 2.2rem;
+        margin-top: 1rem;
+        gap: 1.8rem;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 0 22px;
+    }
+
+
+}

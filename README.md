@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/erntTt94/Clipboard-Landing-Page](https://github.com/erntTt94/Clipboard-Landing-Page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://ernttt94.github.io/Clipboard-Landing-Page/](https://ernttt94.github.io/Clipboard-Landing-Page/)
 
 ## My process
 

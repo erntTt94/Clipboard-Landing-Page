@@ -14,7 +14,6 @@ body {
     background-size: 100% 24%;
     background-position: top;
     margin-top: 100px;
-    background-color: red;
 }
 
 /* All */
@@ -249,7 +248,7 @@ button:hover {
         margin: 1rem;
     }
     #header {
-        place-self: center;
+        place-items: center;
     }
 
     .header-btn {
@@ -259,7 +258,7 @@ button:hover {
         padding: 1rem 6rem;
     }
      #computer-main-container {
-        place-self: center;
+        place-items: center;
     }
 
     #computer-content-container {
@@ -301,8 +300,7 @@ button:hover {
         position: inherit;
     }
      #download {
-        text-align: center;
-        place-self: center;
+       place-itemms: center;
     }
 
     footer {
